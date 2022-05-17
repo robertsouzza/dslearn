@@ -16,10 +16,10 @@ public class Enrollment {
 	@EmbeddedId
 	private EnrollmentPK id = new EnrollmentPK();
 	
-	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE") // alterado
 	private Instant enrollMoment;
 
-	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")//alterado
 	private Instant refundMoment;
 	private boolean available;
 	private boolean onlyUpdate;
