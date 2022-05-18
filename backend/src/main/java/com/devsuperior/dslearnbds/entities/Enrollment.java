@@ -22,10 +22,10 @@ public class Enrollment {
 	@EmbeddedId
 	private EnrollmentPK id = new EnrollmentPK();
 	
-	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE") // alterado
+	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE") 
 	private Instant enrollMoment;
 
-	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")//alterado
+	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant refundMoment;
 	private boolean available;
 	private boolean onlyUpdate;
@@ -34,7 +34,7 @@ public class Enrollment {
 	private Set<Lesson> lessonsDone = new HashSet<>();
 	
 	@OneToMany(mappedBy = "enrollment")
-	private List<Deliver> deliveries = new ArrayList<>(); //alterado
+	private List<Deliver> deliveries = new ArrayList<>(); 
 	
 	public Enrollment() {
 	}
@@ -98,7 +98,7 @@ public class Enrollment {
 		this.onlyUpdate = onlyUpdate;
 	}
 
-	public List<Deliver> getDeliveries() {  //alterado
+	public List<Deliver> getDeliveries() {  
 		return deliveries;
 	}
 
