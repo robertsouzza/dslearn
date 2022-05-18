@@ -34,7 +34,7 @@ public class Enrollment {
 	private Set<Lesson> lessonsDone = new HashSet<>();
 	
 	@OneToMany(mappedBy = "enrollment")
-	private List<Deliver> deliveries = new ArrayList<>();
+	private List<Deliver> deliveries = new ArrayList<>(); //alterado
 	
 	public Enrollment() {
 	}
