@@ -36,10 +36,10 @@ public abstract class Lesson implements Serializable {
 	@JoinColumn(name = "section_id")
 	private Section section;
 	
-/*
+
 	@OneToMany(mappedBy = "lesson")
 	private List<Deliver> deliveries = new ArrayList<>();
-	*/
+	
 	
 	@ManyToMany
 	@JoinTable(name = "tb_lessons_done",
@@ -99,9 +99,9 @@ public abstract class Lesson implements Serializable {
 		return enrollmentsDone;
 	}
 
-	/*public List<Deliver> getDeliveries() {
+	public List<Deliver> getDeliveries() {
 		return deliveries;
-	}*/
+	}
 
 	@Override
 	public int hashCode() {
