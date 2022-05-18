@@ -98,7 +98,7 @@ public class Enrollment {
 		this.onlyUpdate = onlyUpdate;
 	}
 
-	public List<Deliver> getDeliveries() {
+	public List<Deliver> getDeliveries() {  //alterado
 		return deliveries;
 	}
 
