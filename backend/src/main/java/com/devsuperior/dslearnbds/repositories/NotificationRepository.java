@@ -9,6 +9,6 @@ import com.devsuperior.dslearnbds.entities.User;
 
 public interface NotificationRepository extends JpaRepository<Notification, Long> {
 
-	Page<Notification> findByUser(User user, Pageable pageable);
+	Page<Notification> findByUser(User user, Pageable pageable); // buscar notificação do usuário.
 }
 

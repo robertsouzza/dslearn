@@ -28,8 +28,8 @@ public class AuthService {
 	}
 	
 	public void validateSelfOrAdmin(Long userId) {
-		User user = authenticated();
-		if (!user.getId().equals(userId) && !user.hasHole("ROLE_ADMIN")) {
+		User user = authenticated(); // se não for o próprio usuário ou um administrador.
+		if (!user.getId().equals(userId) && !user.hasHole("ROLE_ADMIN")) { 
 			throw new ForbiddenException("Access denied");
 		}
 	}
